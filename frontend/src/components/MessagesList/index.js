@@ -135,7 +135,7 @@ const useStyles = makeStyles((theme) => ({
     },
     whiteSpace: "pre-wrap",
     backgroundColor: "#dcf8c6",
-    color: "#303030",
+    color: "#FFFFFFF",
     alignSelf: "flex-end",
     borderTopLeftRadius: 8,
     borderTopRightRadius: 8,
@@ -259,8 +259,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     backgroundColor: "inherit",
     padding: 10,
-    backgroundColor: theme.mode === 'light' ? '#0101DF' : '#1c1c1c',
-    color: theme.mode === 'light' ? '#0101DF' : '#FFF',
+    backgroundColor: theme.mode === 'light' ? '#2DDD7F' : '#FFFFFFF',
+    color: theme.mode === 'light' ? '#2DDD7F' : '#FFF',
   },
 }));
 
@@ -643,12 +643,12 @@ const MessagesList = ({ ticket, ticketId, isGroup }) => {
     href={message.quotedMsg.mediaUrl}
     target="_blank"
     sx={(theme) => ({
-      borderColor: theme.palette.mode === 'light' ? '#0101DF' : '#FFF',
+      borderColor: theme.palette.mode === 'light' ? '#FFFFFF' : '#FFF',
       color: theme.palette.mode === 'light' ? '#0101DF' : '#FFF',
-      backgroundColor: theme.palette.mode === 'light' ? '#0101DF10' : '#1c1c1c',
+      backgroundColor: theme.palette.mode === 'light' ? '#0101DF10' : '#FFFFFF',
       '&:hover': {
-        backgroundColor: theme.palette.mode === 'light' ? '#0101DF20' : '#333',
-        borderColor: theme.palette.mode === 'light' ? '#0101DF' : '#FFF',
+        backgroundColor: theme.palette.mode === 'light' ? '#0101DF20' : '#FFFFFF',
+        borderColor: theme.palette.mode === 'light' ? '#FFFFFF' : '#FFF',
         color: theme.palette.mode === 'light' ? '#0101DF' : '#FFF',
       }
     })}

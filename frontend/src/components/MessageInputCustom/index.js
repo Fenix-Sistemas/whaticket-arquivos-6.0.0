@@ -797,8 +797,9 @@ const MessageInputCustom = (props) => {
         toastError(err);
       }
     } else {
+		
       const messageToSend = signMessage 
-        ? `*${user?.name}:*\n${message.message}` 
+        ? `*Atendente: [${user?.name}]*\n${message.message}` 
         : message.message;
       
       try {
@@ -877,7 +878,7 @@ const MessageInputCustom = (props) => {
       fromMe: true,
       mediaUrl: "",
       body: signMessage
-        ? `*${user?.name}:*\n${inputMessage.trim()}`
+        ? `*Atendente: [${user?.name}]*\n${inputMessage.trim()}`
         : inputMessage.trim(),
       quotedMsg: replyingMessage,
     };
