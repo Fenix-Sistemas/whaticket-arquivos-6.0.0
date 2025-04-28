@@ -59,6 +59,7 @@ const App = () => {
                 primary: { main: mode === "light" ? "#0101DF" : "#FFFFFF" },
                 quicktags: { main: mode === "light" ? "#0101DF" : "#0101DF" },
 				sair: { main: mode === "light" ? "#0101DF" : "#333" },
+                sairText: { main: mode === "light" ? "#FFFFFF" : "#FFFFFF" },
 				vcard: { main: mode === "light" ? "#0101DF" : "#666" },
                 textPrimary: mode === "light" ? "#0101DF" : "#FFFFFF",
                 borderPrimary: mode === "light" ? "#0101DF" : "#FFFFFF",

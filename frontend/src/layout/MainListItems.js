@@ -59,7 +59,8 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 10,
     marginTop: 10,
     backgroundColor: theme.palette.sair.main,
-    color: theme.palette.text.sair,
+    color: theme.palette.sairText.main,
+    fontWeight: "bold",
 	},
 }));
 
@@ -644,10 +645,10 @@ const MainListItems = (props) => {
 >
   {`${version}`}
   <span style={{
-    backgroundColor: "green",
+    backgroundColor: "blue",
     color: "white",
-    fontSize: "10px",
-    padding: "2px 6px",
+    fontSize: "14px",
+    padding: "3px 9px",
     borderRadius: "10px",
     fontWeight: "bold",
     lineHeight: "normal"
@@ -668,10 +669,15 @@ const MainListItems = (props) => {
           onClick={handleClickLogout}
           className={classes.logoutButton}
         >
-          <ListItemIcon>
-            <RotateRight />
-          </ListItemIcon>
-          <ListItemText primary={i18n.t("Sair")} />
+        <ListItemIcon>
+          <img
+            src="https://api.fenixpr.com.br/public/logotipos/sair.png" // Caminho para sua imagem
+            alt="Sair"
+            style={{ width: 30, height: 30 }} // Tamanho da imagem
+          />
+        </ListItemIcon>
+        <ListItemText primary={i18n.t("Sair")}
+        />
         </ListItem>
       </li>
     </div>
